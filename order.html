@@ -102,22 +102,22 @@
       </tr>
       <tr>
         <th><label class="label" for="name" name="name">名前</label></th>
-        <td><input type="name" type="text"></td>
+        <td><input type="name" type="text" required></td>
         </tr>
       
        <tr>
        <th><label class="label" for="e-mail">メール</label></th>
-       <td><input type="text" type="email" name="email"></td>
+       <td><input type="text" type="email" name="email" required></td>
       </tr>
       <tr>
         <th><label class="label" for="product">郵便番号</label></th>
-        <td><input type="text" name="zip21" size="4" maxlength="3"> － <input type="text" name="zip22" size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');">
+        <td><input type="text" name="zip21" size="4" maxlength="3" required> － <input type="text" name="zip22" size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');">
         </td>
         
        </tr>
        <th><label class="label" for="product">住所</label></th>
          <!-- ▼住所入力フィールド(都道府県+以降の住所) -->
-       <td><textarea type="text" name="addr21" size="40"></textarea></td>
+       <td><textarea type="text" name="addr21" size="40" required></textarea></td>
 
        <tr>
         <th><label class="label" for="pay">支払い方法</label></th>
@@ -131,7 +131,7 @@
     【注意事項】
     <p>ご注文確認後にご登録のEメールアドレス宛にお支払い金額のご連絡をさせて頂きます。<br><span class="ps">お支払い確認後はキャンセルや変更を承ることができませんのでよくご確認の上、ご注文ください。</span><br>
     (お支払い前のキャンセル、変更は可能です。)</p>
-    <input type="checkbox" name="注意事項"><label for="ps">注意事項に同意する</label>
+    <input type="checkbox" name="注意事項" required><label for="ps">注意事項に同意する</label>
       <div class="item no-label">
         <input class="btn" type="submit" value="注文確定">
       </div>
