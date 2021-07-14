@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TransGoods.com</title>
+  <link rel="stylesheet" href="CSS/style2.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+
+</head>
+<body>
+  <header id="header" class="wrapper">
+    <h1 class="site-title">
+      <a href="index.html">
+        <img src="img/logo.jpeg">
+      </a>
+    </h1>
+    <nav id="navi">
+      <ul class="navi-menu">
+        <li><a href="daily.html">昼用エピテーゼ </a></li>
+        <li><a href="night.html">夜用エピテーゼ </a></li>
+        <li><a href="pee.html">立ちション用エピテーゼ </a></li>
+        <li><a href="pay.html">お支払い方法について</a></li>
+        <li><a href="https://lin.ee/BHEPv0Q">お問い合わせ(LINE)</a></li>
+        <li><a href="order.html">○ご注文フォーム○</a></li>
+    
+      </ul>
+    </nav>
+
+    <div class="navi-button">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="mask"></div>
+  </header>
+<main>
+ <div class="order wrapper">
+  <form class="contact-form" action="mailto:transshop.myuho@gmail.com" method="POST" enctype="text/plain">
+      <p>注文情報をご記載下さい。</p>
+      <table class="item">
+       <tr>
+       <th><label class="label" for="product">注文商品</label></th>
+       <td><select name="色" required>
+          <option>選択してください</option>
+          <optgroup label="昼用エピテーゼ ">
+          <option>①昼用エピテーゼ(12cm) </option>
+          <option>②昼用エピテーゼ(10cm) </option>
+          <option>③昼用エピテーゼ(9.5cm) </option>
+          <option>④昼用エピテーゼ(9.5cm)</option>
+        </optgroup>
+          <optgroup label="夜用エピテーゼ ">
+          <option>①夜用エピテーゼ(15cm) </option>
+          <option>②夜用エピテーゼ(15cm) </option>
+          <option>③夜用エピテーゼ(21cm) </option>
+          <option>④夜用エピテーゼ(13.5cm) </option>
+          <option>⑤夜用エピテーゼ(19cm) </option>
+          <option>⑥夜用エピテーゼ(19cm) </option>
+        </optgroup>
+          <optgroup label="立ちション用エピテーゼ ">
+          <option>①立ちション用エピテーゼ(11cm) </option>
+          <option>②立ちション用エピテーゼ(13cm) </option>
+          <option>③立ちション用エピテーゼ(10cm)</option>
+        </optgroup>
+        </select>
+       </td> 
+      </tr>
+       <tr>
+       <th><label class="label" for="product">希望の色</label></th>
+       <td><select name="色" required>
+          <option>選択してください</option>
+          <option>１番 </option>
+          <option>２番 </option>
+          <option>３番 </option>
+          <option>４番 </option>
+          <option>５番 </option>
+          <option>６番 </option>
+          <option>７番 </option>
+          <option>８番 </option>
+          <option>９番 </option>
+          <option>１０番 </option>
+          <option>１１番 </option>
+          <option>１２番 </option>
+          
+        </select>
+       </td> 
+      </tr>
+       <tr>
+       <th><label class="label" for="product">オプション</label></th>
+       <td>
+        <input type="checkbox" name="オプション"><label for="option">陰毛(黒)追加+6000円</label><br>
+        <input type="checkbox" name="オプション"><label for="option">可動式棒追加+10000円</label><br>
+        <input type="checkbox" name="オプション"><label for="option">接着剤追加+7000円</label>
+      </td> 
+        </label>
+          
+        </select>
+       </td> 
+      </tr>
+      <tr>
+        <th><label class="label" for="name" name="name">名前</label></th>
+        <td><input type="name" type="text"></td>
+        </tr>
+      
+       <tr>
+       <th><label class="label" for="e-mail">メール</label></th>
+       <td><input type="text" type="email" name="email"></td>
+      </tr>
+      <tr>
+        <th><label class="label" for="product">郵便番号</label></th>
+        <td><input type="text" name="zip21" size="4" maxlength="3"> － <input type="text" name="zip22" size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');">
+        </td>
+        
+       </tr>
+       <th><label class="label" for="product">住所</label></th>
+         <!-- ▼住所入力フィールド(都道府県+以降の住所) -->
+       <td><textarea type="text" name="addr21" size="40"></textarea></td>
+
+       <tr>
+        <th><label class="label" for="pay">支払い方法</label></th>
+        <td><input type="radio" name="支払い方法">現金振込(5000円OFF)<br><input type="radio" name="支払い方法">paypal送金(カード払い可)<br><br></td>
+       </tr>
+
+
+
+      
+    </table> 
+    【注意事項】
+    <p>ご注文確認後にご登録のEメールアドレス宛にお支払い金額のご連絡をさせて頂きます。<br><span class="ps">お支払い確認後はキャンセルや変更を承ることができませんのでよくご確認の上、ご注文ください。</span><br>
+    (お支払い前のキャンセル、変更は可能です。)</p>
+    <input type="checkbox" name="注意事項"><label for="ps">注意事項に同意する</label>
+      <div class="item no-label">
+        <input class="btn" type="submit" value="注文確定">
+      </div>
+    </form>
+  </div>
+    
+    
+    
+ </div>
+</main>
+
+</body>
+</html>
